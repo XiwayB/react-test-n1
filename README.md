@@ -1,16 +1,15 @@
 # React Test N1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This is a test sent by Leeroy.
 
-Timeline: 3 days to complete the test
+Timeline: 3 days to complete the test.
 
 ## Requirements
 
 - Replicate design sent in the design folder (original text: "Réalisez l'intégration disponible en pièce jointe dans le dossier design.")
 - Build a functional website using JS or a framework such as Vue or React (original text: "Rendre fonctionnel le système en utilisant JS ou un framework de type Vue ou React.")
 
-## Style Guide Provided in the test zip file
+## Style Guide Provided 
 
 ### Layout
 
@@ -30,7 +29,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
-## Typography
+### Typography
 
 ### Body Copy
 
@@ -54,7 +53,7 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 
 ## Stack 
 
-- ReactJS
+- ReactJS (bootstrapped with [Create React App](https://github.com/facebook/create-react-app))
 - Styled Components
 
 ## Screenshots 
