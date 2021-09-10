@@ -1,30 +1,29 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaPinterest,
-  FaInstagram,
-} from "react-icons/fa";
-import { ImFacebook2 } from 'react-icons/im';
+import { FaTwitter, FaPinterest, FaInstagram } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
 import {
   FooterContainer,
-  FooterWrap,
+  FooterWrapper,
   SocialMedia,
   SocialLogo,
   SocialIcons,
-  SocialMediaWrap,
+  SocialMediaWrapper,
   SocialIconLink,
   FooterMenu,
   FooterMenuLinks,
-  FooterCopyright
+  FooterCopyright,
 } from "./FooterElements";
 import { menuData } from "../../data/MenuData";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterWrap>
+      <FooterWrapper>
+
+        {/* Logo & Social media links */}
+        
         <SocialMedia>
-          <SocialMediaWrap>
+          <SocialMediaWrapper>
             <SocialLogo to="/">loopstudios</SocialLogo>
             <SocialIcons>
               <SocialIconLink
@@ -60,10 +59,13 @@ const Footer = () => {
                 <FaInstagram />
               </SocialIconLink>
             </SocialIcons>
-          </SocialMediaWrap>
+          </SocialMediaWrapper>
         </SocialMedia>
+
+        {/* Menu links & copyright */}
+
         <SocialMedia>
-          <SocialMediaWrap>
+          <SocialMediaWrapper>
             <FooterMenu>
               {menuData.map((item, index) => (
                 <FooterMenuLinks to={item.link} key={index}>
@@ -74,9 +76,9 @@ const Footer = () => {
             <FooterCopyright>
               © 2021 Loopstudios. All rights reserved.
             </FooterCopyright>
-          </SocialMediaWrap>
+          </SocialMediaWrapper>
         </SocialMedia>
-      </FooterWrap>
+      </FooterWrapper>
     </FooterContainer>
   );
 };

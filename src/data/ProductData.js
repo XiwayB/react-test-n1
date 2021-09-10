@@ -1,3 +1,4 @@
+// Desktop size images
 import imageDeepEarth from '../images/desktop/image-deep-earth.jpg';
 import imageNightArcade from '../images/desktop/image-night-arcade.jpg';
 import imageSoccerTeam from '../images/desktop/image-soccer-team.jpg';
@@ -7,6 +8,7 @@ import imagePocketBorealis from '../images/desktop/image-pocket-borealis.jpg';
 import imageCuriosity from '../images/desktop/image-curiosity.jpg';
 import imageFisheye from '../images/desktop/image-fisheye.jpg';
 
+// Mobile size images
 import imageDeepEarthMobile from '../images/mobile/image-deep-earth.jpg';
 import imageNightArcadeMobile from '../images/mobile/image-night-arcade.jpg';
 import imageSoccerTeamMobile from '../images/mobile/image-soccer-team.jpg';

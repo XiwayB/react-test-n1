@@ -1,4 +1,5 @@
 import React from "react";
+
 import { InfoSectionWrapper, InfoSectionImg, InfoSectionContent, InfoSectionTitle, InfoSectionText } from "./InfoSectionElements";
 import imageInteractive from '../../images/desktop/image-interactive.jpg';
 

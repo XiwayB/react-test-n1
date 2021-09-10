@@ -12,6 +12,7 @@ export const InfoSectionWrapper = styled.div`
     margin-top: 5rem;
   }
 `;
+
 export const InfoSectionImg = styled.img`
 @media screen and (max-width: 375px){
     height: 241px;
@@ -21,7 +22,7 @@ export const InfoSectionImg = styled.img`
 
 export const InfoSectionContent = styled.div`
   position: absolute;
-  background: #fff;
+  background: ${props => props.theme.colors.white};
   height: 400px;
   width: 566px;
   padding: 5rem 0 0em 6rem;
@@ -43,7 +44,7 @@ export const InfoSectionTitle = styled.h1`
   font-size: 3rem;
   font-weight: lighter;
   margin-bottom: 1.5rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${props => props.theme.fontFamily.josefin};
 
   @media screen and (max-width: 375px){
     font-size: 2rem;
@@ -55,6 +56,5 @@ export const InfoSectionText = styled.p`
   line-height: 1.7;
   font-weight: lighter;
   margin-bottom: 2rem;
-  color: hsl(0, 0%, 55%);
-
+  color: ${props => props.theme.colors.darkGrey};
 `;

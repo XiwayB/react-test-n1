@@ -4,7 +4,6 @@ export const ProductsContainer = styled.div`
   position: relative;
   width: 100vw;
   padding: 3rem 6rem;
-  color: #fff;
 
   @media screen and (max-width: 375px) {
     padding: 0rem 5rem;
@@ -26,9 +25,9 @@ export const ProductHeader = styled.h1`
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  color: hsl(0, 0%, 0%);
+  color: ${props => props.theme.colors.black};
   font-weight: lighter;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${props => props.theme.fontFamily.josefin};
 
   @media screen and (max-width: 375px) {
     font-size: 2rem;
@@ -39,17 +38,17 @@ export const ProductHeader = styled.h1`
 export const ProductButton = styled.button`
   font-size: 15px;
   padding: 0 50px;
-  color: hsl(0, 0%, 0%);
-  background: hsl(0, 0%, 100%);
-  border: solid hsl(0, 0%, 0%) 1px;
+  color: ${props => props.theme.colors.black};
+  background: ${props => props.theme.colors.white};
+  border: solid 1px;
   text-transform: uppercase;
   letter-spacing: .2rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
-    color: hsl(0, 0%, 100%);
-    background: hsl(0, 0%, 0%);
+    color: ${props => props.theme.colors.white};
+    background: ${props => props.theme.colors.black};
   }
 
   @media screen and (max-width: 375px) {
@@ -125,7 +124,9 @@ export const ProductCard = styled.div`
     &::before {
       background: rgba(255, 255, 255, 0.5);
     }
-    color: #000;
+    h2 {
+      color: ${props => props.theme.colors.black};
+    }
   }
 
   @media screen and (max-width: 375px) {
@@ -142,7 +143,8 @@ export const ProductTitle = styled.h2`
   text-transform: uppercase;
   margin: 0rem 3rem 3rem 2rem;
   position: relative;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${props => props.theme.fontFamily.josefin};
+  color: ${props => props.theme.colors.white};
 
   @media screen and (max-width: 375px) {
     font-size: 1.4rem;

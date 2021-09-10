@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Dropdown from "../Dropdown";
 import Navbar from "../Navbar";
+
 import { HeroContainer, HeroContent, HeroTitle ,HeroItems } from "./HeroElements";
 
 const Hero = () => {

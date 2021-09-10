@@ -1,6 +1,6 @@
 import React from "react";
-import { menuData } from "../../data/MenuData";
 
+import { menuData } from "../../data/MenuData";
 import {
   Nav,
   NavLogoLink,
@@ -16,7 +16,7 @@ const Navbar = ({ toggle }) => {
         <NavLogoLink to="/">loopstudios</NavLogoLink>
         <Bars onClick={toggle} />
         <NavMenu>
-        {menuData.map((item, index) => (
+          {menuData.map((item, index) => (
             <NavMenuLinks to={item.link} key={index}>
               {item.title}
             </NavMenuLinks>

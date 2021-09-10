@@ -7,7 +7,7 @@ import {
   ProductWrapper,
   ProductWrapperMobile,
   ProductCard,
-  ProductTitle
+  ProductTitle,
 } from "./ProductsElements";
 import { productData, productDataMobile } from "../../data/ProductData";
 
@@ -18,6 +18,8 @@ const Products = () => {
         <ProductHeader>Our creations</ProductHeader>
         <ProductButton>See all</ProductButton>
       </ProductHeaderWrapper>
+
+      {/* Map data for Desktop */}
       <ProductWrapper>
         {productData.map((product, index) => {
           return (
@@ -32,6 +34,8 @@ const Products = () => {
           );
         })}
       </ProductWrapper>
+
+      {/* Map data for Mobile */}
       <ProductWrapperMobile>
         {productDataMobile.map((productMobile, index) => {
           return (

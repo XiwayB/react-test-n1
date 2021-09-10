@@ -1,10 +1,11 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Alata', sans-serif;
-}
+    font-family: ${props => props.theme.fontFamily.alata};
+}   
 `;

@@ -9,14 +9,14 @@ export const DropdownContainer = styled.div`
     height: 100%;
     background: #000;
     display: grid;
-    top: ${({isOpen}) => (isOpen ? '0' : '-1000px')};
+    top: ${({ isOpen }) => (isOpen ? "0" : "-1000px")};
     left: 0;
     transition: 0.3s ease-in-out;
-    opacity: ${({isOpen}) => (isOpen ? '1' : '0')};
+    opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
 `;
 
 export const Logo = styled(Link)`
-  color: hsl(0, 0%, 100%);
+  color: ${(props) => props.theme.colors.white};
   font-size: 1.8rem;
   display: flex;
   position: absolute;
@@ -36,7 +36,7 @@ export const Icon = styled.div`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: hsl(0, 0%, 100%);
+  color: ${(props) => props.theme.colors.white};
   font-size: 1.8rem;
 
   position: absolute;
@@ -56,8 +56,8 @@ export const DropdownMenu = styled.div`
 
 export const DropdownLink = styled(Link)`
   display: flex;
-  color: hsl(0, 0%, 100%);
-  font-family: 'Josefin Sans', sans-serif;
+  color: ${props => props.theme.colors.white};
+  font-family: ${props => props.theme.fontFamily.josefin};
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;

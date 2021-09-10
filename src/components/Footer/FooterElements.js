@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #000;
+  background-color: ${props => props.theme.colors.black};
 
   @media screen and (max-width: 375px) {
     position: relative;
   }
 `;
 
-export const FooterWrap = styled.div`
+export const FooterWrapper = styled.div`
   padding: 16px 24px;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ export const SocialMedia = styled.section`
   width: 100%;
 `;
 
-export const SocialMediaWrap = styled.div`
+export const SocialMediaWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +43,7 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: hsl(0, 0%, 100%);
+  color: ${props => props.theme.colors.white};
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -65,13 +65,13 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
   font-size: 26px;
+  color: ${props => props.theme.colors.white};
   position: relative;
 
   // Pseudo-element of the parent element for underline effect
 
-  &::after {    
+  &::after {
     background: none repeat scroll 0 0 transparent;
     bottom: -3px;
     content: "";
@@ -84,11 +84,11 @@ export const SocialIconLink = styled.a`
     width: 0;
   }
 
-  &:hover { 
-      &::after{
-        width: 100%; 
-        left: 0; 
-      }
+  &:hover {
+    &::after {
+      width: 100%;
+      left: 0;
+    }
   }
 `;
 
@@ -105,18 +105,18 @@ export const FooterMenu = styled.div`
 `;
 
 export const FooterMenuLinks = styled(Link)`
-  color: hsl(0, 0%, 100%);
+  color: ${props => props.theme.colors.white};
   display: flex;
   text-decoration: none;
   font-weight: lighter;
   padding-right: 2rem;
   cursor: pointer;
   position: relative;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${props => props.theme.fontFamily.josefin};
 
   // Pseudo-element of the parent element for underline effect
 
-  &::after {    
+  &::after {
     background: none repeat scroll 0 0 transparent;
     bottom: -15px;
     content: "";
@@ -124,17 +124,17 @@ export const FooterMenuLinks = styled(Link)`
     height: 2px;
     left: 50%;
     position: absolute;
-    background: hsl(0, 0%, 100%);
+    background: ${props => props.theme.colors.white};;
     width: 0;
     margin-left: 10px;
+    transition: 0.3s ease 0s;
   }
 
-  &:hover { 
-      &::after{
-        width: 35%; 
-        left: 0; 
-        transition: all 0.8s ease;
-      }
+  &:hover {
+    &::after {
+      width: 35%;
+      left: 0;
+    }
   }
 
   @media screen and (max-width: 375px) {

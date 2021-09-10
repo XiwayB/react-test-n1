@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import ImageHeroDesktop from "../../images/desktop/image-hero.jpg";
 import ImageHeroMobile from "../../images/mobile/image-hero.jpg";
 
@@ -32,7 +33,7 @@ export const HeroItems = styled.div`
   max-height: 100vh;
   padding: 0 2rem;
   width: 900px;
-  color: #fff;
+  color: ${props => props.theme.colors.white};
   text-transform: uppercase;
   line-height: 1;
 
@@ -46,13 +47,13 @@ export const HeroTitle = styled.h1`
   font-size: clamp(2rem, 10vw, 4rem);
   letter-spacing: 2px;
   border-style: solid;
-  color: hsl(0, 0%, 100%);
+  color: ${props => props.theme.colors.white};
   display: flex;
   align-items: center;
   line-height: 1;
   padding: 3rem;
   margin: -1rem 2rem 5rem 9rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: ${props => props.theme.fontFamily.josefin};
   font-weight: lighter;
   
   @media screen and (max-width: 375px) {

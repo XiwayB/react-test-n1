@@ -13,7 +13,7 @@ import {
 const Dropdown = ({ isOpen, toggle }) => {
   return (
     <DropdownContainer isOpen={isOpen} onClick={toggle}>
-    <Logo>loopstudios</Logo>
+    <Logo to='/'>loopstudios</Logo>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>

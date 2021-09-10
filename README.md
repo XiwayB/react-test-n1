@@ -63,3 +63,6 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 In the project directory, you can run:
 
 ### `yarn start`
+
+Design's styles can be updated in:
+### `src/theme.js`

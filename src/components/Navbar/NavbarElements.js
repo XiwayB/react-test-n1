@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { NavLink, Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
@@ -7,11 +8,10 @@ export const Nav = styled.nav`
   height: 80px;
   padding: 1rem 10.5rem;
   z-index: 100;
-  font-weight: 700;
 `;
 
 export const NavLogoLink = styled(NavLink)`
-  color: hsl(0, 0%, 100%);
+  color: ${props => props.theme.colors.white};
   font-size: 2rem;
   display: flex;
   position: absolute;
@@ -34,20 +34,19 @@ export const NavIcon = styled.div`
   top: 0;
   right: 0;
   cursor: pointer;
-  color: hsl(0, 0%, 100%);
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
 
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 375px) {
     display: block;
-    color: hsl(0, 0%, 100%);
     cursor: pointer;
     position: absolute;
     top: 2.5rem;
-    right: 1rem; 
+    right: 1rem;
     font-size: 1.5rem;
+    color: ${props => props.theme.colors.white};
   }
 `;
 
@@ -57,7 +56,7 @@ export const NavMenu = styled.div`
   align-items: center;
   margin-top: 2rem;
 
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: 375px) {
     display: none;
   }
 `;
@@ -65,15 +64,15 @@ export const NavMenu = styled.div`
 export const NavMenuLinks = styled(Link)`
   color: hsl(0, 0%, 100%);
   display: flex;
-  text-decoration: none; 
+  text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: ${props => props.theme.fontFamily.josefin};
   position: relative;
 
-  // Pseudo-element of the parent element for underline effect
+  // Pseudo-element of parent's element for underline effect
 
-  &::after {    
+  &::after {
     background: none repeat scroll 0 0 transparent;
     bottom: -15px;
     content: "";
@@ -81,16 +80,15 @@ export const NavMenuLinks = styled(Link)`
     height: 2px;
     left: 50%;
     position: absolute;
-    background: hsl(0, 0%, 100%);
+    background: ${props => props.theme.colors.white};
     width: 0;
     margin-left: -8px;
   }
 
-  &:hover { 
-      &::after{
-        width: 25%; 
-        transition: all 0.3s ease;
-      }
+  &:hover {
+    &::after {
+      width: 25%;
+      transition: all 0.3s ease;
+    }
   }
-
 `;
