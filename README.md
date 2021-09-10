@@ -1,13 +1,19 @@
 # React Test N1
 
-This is a test sent by Leeroy.
+This is a test sent by [Leeroy](https://www.leeroy.ca/).
 
 Timeline: 3 days to complete the test.
 
-## Requirements
+# Requirements
 
-- Replicate design sent in the design folder (original text: "Réalisez l'intégration disponible en pièce jointe dans le dossier design.")
-- Build a functional website using JS or a framework such as Vue or React (original text: "Rendre fonctionnel le système en utilisant JS ou un framework de type Vue ou React.")
+- Replicate design from the design folder 
+
+(original text: "Réalisez l'intégration disponible en pièce jointe dans le dossier design.")
+
+- Build a functional website using JS or a framework such as Vue or React 
+
+(original text: "Rendre fonctionnel le système en utilisant JS ou un framework de type Vue ou React.")
+
 
 ## Style Guide Provided 
 
@@ -51,18 +57,28 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
 
-## Stack 
+
+# Stack 
 
 - ReactJS (bootstrapped with [Create React App](https://github.com/facebook/create-react-app))
 - Styled Components
 
-## Screenshots 
+# Screenshots 
 
-## Get Started
+## Desktop - width: 1440px
+
+<img src="src/images/desktop/Leeroy_test_n1_desktop.gif" height="400" />
+
+## Mobile - width: 375px
+
+<img src="src/images/mobile/Leeroy_test_n1_mobile.gif" width="265" height="400" />
+
+# Get Started
 
 In the project directory, you can run:
 
-### `yarn start`
+`yarn start`
 
-Design's styles can be updated in:
-### `src/theme.js`
+Design styles can be updated in:
+
+```src/theme.js```
